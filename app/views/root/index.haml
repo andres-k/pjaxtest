@@ -1,0 +1,7 @@
+%p= Random.new_seed
+%p= @basket.id
+
+- @products.each do |product|
+  %ul
+    %li
+      = link_to product.name + " - " + product.desc, basket_path(@basket.id, product.id), :method => :put
