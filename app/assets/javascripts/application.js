@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.pjax
 //= require_tree .
+//
+//
+
+/*$(document).ready(function() {
+  $('a').pjax('[data-pjax-container]', {timeout: 3000});
+});
+*/
+
+$(document).pjax('a', '#main')
